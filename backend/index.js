@@ -7,7 +7,7 @@ const app = express() /* api requests via express server */
 const db = mysql.createConnection({ /* connecting webapp to db */
     host:"localhost",
     user:"root",
-    password:"wenXuan0709!",
+    password:"password",
     database:"databaes"
 })
 app.use(express.json()) //allows app to send json data through a client
