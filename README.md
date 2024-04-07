@@ -54,6 +54,20 @@ DataBaes & Brews is business-side web application for a cafe that both celebrate
 - **Phase 1 🏃:**
   - Create a report detailing project details, the problem statement, target users, list of relations, web interface, and data.
   - **Due Feb 11th**
+- **Phase 2 ✍️:**
+  - Draw an ER diagram, and concert your ER diagram into relations.
+  - **Due Feb 25th**
+- **Phase 3 👩‍💻:**
+  - Convert relations into Third Normal Form.
+  - Create HTML forms for your web application.
+  - Create and load your relations in SQL.
+  - **Due April 7th**
+- **Phase 4 ⌨️:**
+  - Produce a fully functional website that can communicate with the underlying database system and carry out necessary CRUD (create, read, update, delete) actions.
+  - **Due April 21st**
+- **Phase 5 📜:**
+  - Submit a well-written and complete report that includes a cover page, table of contents, introduction, system requirements, conceptual database design, logical database schema, functional dependencies, database normalization, the database system, suggestions on database tuning, user application interface, conclusions and future work, references, and appendix.
+  - **Due April 28th**
   
 
 ## Additional Resources ✒️
