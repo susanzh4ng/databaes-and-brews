@@ -1,0 +1,46 @@
+.App {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.cafe-content{
+  display: flex;
+}
+.cafes {
+  border: solid 2px red;
+}
+
+.CreateCafe, .EditCafe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CreateCafe-inner, .EditCafe-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: white;
+}
+.CreateCafe-button, .EditCafe-button {
+  position: absolute;
+  bottom: 16px;
+}
+
