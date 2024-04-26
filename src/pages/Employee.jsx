@@ -16,7 +16,7 @@ const Employee = () => {
         const res = await axios.get(url) //api call from backend
         setEmployees(res.data); //updating frontend Employee page with DB data
       } catch (err) {
-        console.log(err)
+        alert(err)
       }
     }
     fetchAllEmployees() //calling api call
@@ -28,7 +28,7 @@ const Employee = () => {
       alert("Employee has been deleted!");
       window.location.reload(); 
     } catch (err) {
-      console.log(err)
+      alert(err)
     }
   }
 

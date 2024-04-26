@@ -31,12 +31,14 @@ const CreateStock = (props) => {
                     type='number'
                     placeholder='Cafe ID'
                     name='cafe_c_id'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <input
                     type='number'
                     placeholder='Product ID'
                     name='product_p_id'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <button>Create</button>
             </form>
             <button className='CreateStock-button' onClick={() => props.setTrigger(false)}>X</button> {/* closes modal */}

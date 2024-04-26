@@ -19,7 +19,7 @@ const EditStock = (props) => {
           alert("Stock has been updated!");
           window.location.reload(); //automatically refreshes page
         } catch (err) {
-            console.log(err)
+            alert(err)
         }
         console.log(stock)
       }
@@ -32,12 +32,14 @@ const EditStock = (props) => {
                     type='number'
                     placeholder='Cafe ID'
                     name='cafe_c_id'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <input
                     type='number'
                     placeholder='Product ID'
                     name='product_p_id'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <button>Edit</button>
             </form>
             <button className='EditStock-button' onClick={() => props.setTrigger(false)}>X</button> {/* closes modal */}

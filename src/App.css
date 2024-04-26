@@ -1,10 +1,50 @@
 .App {
   margin: 0;
   padding: 0;
-  height: 100vh;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #221A14;
+  height: 100vh;
+  /*background-color: #F5F1E7; */
+  background-color: #FFFFFF;
+  position: relative;
 }
 
+/*@media App.height and (min-height: 500px) {
+  .App {
+    height: 100%;
+  }
+}*/
+
+.top-blur {
+  position: fixed;
+  top: -88px;
+  left: 1055px;
+  width: 618px;
+  height: 412.89px;
+  background: conic-gradient(from 180deg at 50% 50%, #FFFFFF 0deg, #69442C 90.99990665912628deg);
+  filter: blur(213.1px);
+  z-index: 1;
+}
+.bottom-blur {
+  position: fixed;
+  top: 456px;
+  left: 0px;
+  width: 669.29px;
+  height: 364px;
+  background: conic-gradient(from 180deg at 50% 50%, #221A14 0deg, #69442C 80.99990665912628deg, #FFFFFF 180.37490844726562deg);
+  filter: blur(40px);
+  z-index: 1;
+}
+
+/*main {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}*/
 main {
   padding: 32px;
   display: flex;
@@ -12,35 +52,214 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: Montserrat;
 }
 
-.cafe-content{
+
+/* NAV BAR */
+.Nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 1.2rem;
+	width: 100%;
+  z-index: 2;
+}
+/*.logo {
+	width: 180px;
+	height: auto;
+	vertical-align: middle;
+	padding-left: 2rem;
+}*/
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  display: inline-block;
+  margin-left: 20px;
+}
+.nav-item a {
+  color: #221A14;
+  text-decoration: none;
+}
+.nav-item a:hover {
+  color: #69442C;
+}
+
+/* HOME PAGE */
+i {
+  font-size: 18px;
+  /*border: 2px solid red;*/
+}
+.Home {
+  width: 607px;
+  text-align: center;
+  height: 163px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*border: 2px solid blue;*/
+  text-transform: uppercase;
+  z-index: 2;
+}
+.Home-BottomText {
+  line-height: 30px;
+}
+
+/* TABLES */
+.cafe-content, .stock-content, .product-content, .orders-content, .employee-content, .customer-content {
   display: flex;
+  z-index: 2;
 }
-.cafes {
-  border: solid 2px red;
+.cafes, .stocks, .products, .orders-array, .employees, .customers {
+  background-color: white;
+  margin: 10px;
+  border-radius: 50px;
+  filter: drop-shadow(0px 10px 50px #ece3da);
+  padding: 40px;
+  justify-content: center;
+  z-index: 2;
 }
 
-.CreateCafe, .EditCafe {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.2);
+.Cafe, .Customer, .Employee, .Orders, .Product, .Stock, .Assignment6, .worker-content, .workers {
+  z-index: 2;
+}
+
+.CreateCafe, .EditCafe, .CreateCustomer, .EditCustomer, .CreateEmployee, .EditEmployee, .CreateOrders, .EditOrders, .CreateProduct, .EditProduct, .CreateStock, .EditStock, .EditWorker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Montserrat;
+  background-color: white;
+  /*margin: 100px; */
+  border-radius: 50px;
+  filter: drop-shadow(0px 10px 50px #ece3da);
+  padding: 40px;
+  justify-content: center; 
+  z-index: 2;
 }
 .CreateCafe-inner, .EditCafe-inner {
   position: relative;
   padding: 32px;
-  width: 100%;
-  max-width: 640px;
-  background-color: white;
+  width: 640px;
+  z-index: 2;
 }
 .CreateCafe-button, .EditCafe-button {
   position: absolute;
   bottom: 16px;
 }
+.CreateCafe p, .CreateCustomer p, .CreateEmployee p, .CreateOrders p, .CreateProduct p, .CreateStock p, .EditCafe p, .EditCustomer p, .EditEmployee p, .EditOrders p, .EditProduct p, .EditStock p, .EditWorker p
+{
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
 
+input {
+  font-family: Montserrat;
+  width: 90%;
+  margin: 10px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-weight: medium;
+  border:none;
+  background-color: rgb(240, 234, 225);
+  z-index: 2;
+}
+
+button {
+    font-family: Montserrat;
+    margin: 10px;
+    height: 50px;
+    width: 400px;
+    padding-left: 10px;
+    padding: 20px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    font-weight: medium;
+    background-color: rgb(105, 72, 29);
+    color:white;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.worker-content
+{
+    background-color: white;
+    margin: 200px;
+    border-radius: 50px;
+    filter: drop-shadow(0px 10px 50px #ece3da);
+    z-index: 2;
+}
+
+/*
+.customer-content
+{
+    background-color: white;
+    margin: 100px;
+    border-radius: 50px;
+    filter: drop-shadow(0px 10px 50px #ece3da);
+    padding: 40px;
+    justify-content: center;
+}
+
+.employee-content
+{
+    background-color: white;
+    margin: 100px;
+    border-radius: 50px;
+    filter: drop-shadow(0px 10px 50px #ece3da);
+    padding: 40px;
+    justify-content: center; 
+}
+
+.orders-content
+{
+    background-color: white;
+    margin: 100px;
+    border-radius: 50px;
+    filter: drop-shadow(0px 10px 50px #ece3da);
+    padding: 40px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.product-content
+{
+    background-color: white;
+    margin: 100px;
+    border-radius: 50px;
+    filter: drop-shadow(0px 10px 50px #ece3da);
+    padding: 40px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.stock-content
+{
+    background-color: white;
+    margin: 100px;
+    border-radius: 50px;
+    filter: drop-shadow(0px 10px 50px #ece3da);
+    padding: 40px;
+    justify-content: center; 
+    align-items: center;
+}
+*/

@@ -16,6 +16,7 @@ const Cafe = () => {
         const res = await axios.get(url) //api call from backend
         setCafes(res.data); //updating frontend Cafe page with DB data
       } catch (err) {
+        alert(err)
         console.log(err)
       }
     }
@@ -28,6 +29,7 @@ const Cafe = () => {
       alert("Cafe has been deleted!");
       window.location.reload(); 
     } catch (err) {
+      alert(err)
       console.log(err)
     }
   }

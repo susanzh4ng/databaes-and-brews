@@ -21,7 +21,7 @@ const EditCustomer = (props) => {
           alert("Customer has been updated!");
           window.location.reload(); //automatically refreshes page
         } catch (err) {
-            console.log(err)
+            alert(err)
         }
         console.log(customer)
       }

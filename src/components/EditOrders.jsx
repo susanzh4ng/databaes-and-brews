@@ -20,7 +20,7 @@ const EditOrders = (props) => {
           alert("Order has been updated!");
           window.location.reload(); //automatically refreshes page
         } catch (err) {
-            console.log(err)
+            alert(err)
         }
         console.log(orders)
       }
@@ -33,12 +33,14 @@ const EditOrders = (props) => {
                     type='number'
                     placeholder='Product ID'
                     name='product_p_id'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <input
                     type='number'
                     placeholder='Customer ID'
                     name='customer_c_id'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <input
                     type='number'
                     placeholder='Employee ID'

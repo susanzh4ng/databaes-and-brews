@@ -16,6 +16,7 @@ function App() {
       <BrowserRouter>
       <Nav />
         <Routes>
+          
           <Route path="/" element={<Home/>} />
           <Route path="/cafe" element={<Cafe/>} />
           <Route path="/customer" element={<Customer/>} />
@@ -25,6 +26,8 @@ function App() {
           <Route path="/stock" element={<Stock/>} />
           <Route path="/assignment6" element={<Assignment6/>} />
         </Routes>
+      <div className='top-blur'></div>
+      <div className='bottom-blur'></div>  
       </BrowserRouter>
     </div>
   );

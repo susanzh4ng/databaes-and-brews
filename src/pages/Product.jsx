@@ -16,7 +16,7 @@ const Product = () => {
         const res = await axios.get(url) //api call from backend
         setProducts(res.data); //updating frontend Product page with DB data
       } catch (err) {
-        console.log(err)
+        alert(err)
       }
     }
     fetchAllProducts() //calling api call
@@ -28,7 +28,7 @@ const Product = () => {
       alert("Product has been deleted!");
       window.location.reload(); 
     } catch (err) {
-      console.log(err)
+      alert(err)
     }
   }
 

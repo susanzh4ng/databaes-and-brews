@@ -27,7 +27,7 @@ const Assignment6 = () => {
           .post(url, user)
           .catch(function (error) {
             console.log(error);
-            alert("Error posting user due to "+error+"! Please try again!");
+            alert("Error posting worker due to "+error+"! Please try again!");
           });
     
         axios
@@ -36,6 +36,7 @@ const Assignment6 = () => {
             setWorkers(response.data); //updates workers state with server's data
           })
           .catch(function (error) {
+            alert(error)
             console.log(error);
             if (error.response && error.response.data && error.response.data.message) {
               setWorkers(error.response.data.message); //setting as server's error message
@@ -66,7 +67,8 @@ const Assignment6 = () => {
                     type='number'
                     placeholder='Employee ID'
                     name='id'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <button>Submit</button>
             </form>
         {workers.map(worker => (

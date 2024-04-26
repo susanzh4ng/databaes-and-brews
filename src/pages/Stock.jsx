@@ -16,7 +16,7 @@ const Stock = () => {
         const res = await axios.get(url) //api call from backend
         setStocks(res.data); //updating frontend Stock page with DB data
       } catch (err) {
-        console.log(err)
+        alert(err)
       }
     }
     fetchAllStocks() //calling api call
@@ -28,7 +28,7 @@ const Stock = () => {
       alert("Stock has been deleted!");
       window.location.reload(); 
     } catch (err) {
-      console.log(err)
+      alert(err)
     }
   }
 
@@ -46,7 +46,7 @@ const Stock = () => {
             <p>Stock ID: {stock.supply_id}</p>
             <p>Cafe ID: {stock.cafe_c_id}</p>
             <p>Product ID: {stock.product_p_id}</p>
-            <button onClick={() => handleEdit(stock.supply_id)}>Edit Cafe</button>
+            <button onClick={() => handleEdit(stock.supply_id)}>Edit Stock</button>
             <button className='stock-deleteButton' onClick={() => handleDelete(stock.supply_id)}>Delete</button>
           </div>
         ))}

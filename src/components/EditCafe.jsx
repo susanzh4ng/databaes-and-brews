@@ -20,7 +20,7 @@ const EditCafe = (props) => {
           alert("Cafe has been updated!");
           window.location.reload(); //automatically refreshes page
         } catch (err) {
-            console.log(err)
+            alert(err)
         }
         console.log(cafe)
       }
@@ -46,6 +46,9 @@ const EditCafe = (props) => {
                     onChange={handleChange} />
                 <button>Edit</button>
             </form>
+            <br></br>
+            <br></br>
+            <br></br>
             <button className='EditCafe-button' onClick={() => props.setTrigger(false)}>X</button> {/* closes modal */}
         </div>
     </div>

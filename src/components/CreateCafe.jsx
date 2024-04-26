@@ -16,10 +16,10 @@ const CreateCafe = (props) => {
         e.preventDefault()
         try {
           await axios.post('http://localhost:8800/cafe', cafe) //calling from backend
-          alert("Cafe has been created!");
+          console.log("Cafe has been created!");
           window.location.reload(); //automatically refreshes page
         } catch (err) {
-            console.log(err)
+            alert(err)
         }
         console.log(cafe)
       }
@@ -32,7 +32,8 @@ const CreateCafe = (props) => {
                     type='text'
                     placeholder='Address'
                     name='address'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <input
                     type='number'
                     placeholder='Manager ID'
@@ -45,6 +46,9 @@ const CreateCafe = (props) => {
                     onChange={handleChange} />
                 <button>Create</button>
             </form>
+            <br></br>
+            <br></br>
+            <br></br>
             <button className='CreateCafe-button' onClick={() => props.setTrigger(false)}>X</button> {/* closes modal */}
         </div>
     </div>

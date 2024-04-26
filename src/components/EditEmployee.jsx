@@ -23,7 +23,7 @@ const EditEmployee = (props) => {
           alert("Employee has been updated!");
           window.location.reload(); //automatically refreshes page
         } catch (err) {
-            console.log(err)
+            alert(err)
         }
         console.log(employee)
       }

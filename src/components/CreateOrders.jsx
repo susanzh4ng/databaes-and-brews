@@ -32,12 +32,14 @@ const CreateOrders = (props) => {
                     type='number'
                     placeholder='Product ID'
                     name='product_p_id'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <input
                     type='number'
                     placeholder='Customer ID'
                     name='customer_c_id'
-                    onChange={handleChange} />
+                    onChange={handleChange}
+                    required />
                 <input
                     type='number'
                     placeholder='Employee ID'

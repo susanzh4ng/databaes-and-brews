@@ -18,7 +18,7 @@ const Customer = () => {
         const res = await axios.get(url) //api call from backend
         setCustomers(res.data); //updating frontend Cafe page with DB data
       } catch (err) {
-        console.log(err)
+        alert(err)
       }
     }
     fetchAllCustomers() //calling api call
@@ -31,7 +31,7 @@ const Customer = () => {
       alert("Customer has been deleted!");
       window.location.reload();
     } catch (err) {
-      console.log(err)
+      alert(err)
     }
   }
 

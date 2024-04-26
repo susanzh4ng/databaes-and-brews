@@ -4,29 +4,29 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <div className='Nav'>
-        <ul>
-            <li>
+        <ul className='nav-list'>
+            <li className="nav-item">
                 <Link to="/cafe">Cafes</Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link to="/customer">Customers</Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link to="/employee">Employees</Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link to="/orders">Orders</Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link to="/product">Products</Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link to="/stock">Stock</Link>
             </li>
-            <li>
+            <li className="nav-item">
                 <Link to="/assignment6">Assignment 6</Link>
             </li>
         </ul>
