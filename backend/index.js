@@ -445,7 +445,7 @@ app.post("/assignment6", (req,res) => {
     console.log(assignment6Id, assignment6F_name, assignment6L_name);
 })
 
-
+/*
 // @desc Get WORKER - part a: select with injection
 // @route GET /assignment6
 app.get("/assignment6", (req,res) => {
@@ -461,6 +461,7 @@ app.get("/assignment6", (req,res) => {
     }) 
 })
 
+*/
 // @desc Get WORKER - part c: select with prepared statement
 // @route PUT /assignment6/:id
 // @desc Get WORKER
@@ -478,6 +479,7 @@ app.get("/assignment6", (req,res) => {
         }
     }) 
 })
+
 
 // @desc Update worker - Part b (SQL Injection)
 // @route PUT /assignment6/update-inject
